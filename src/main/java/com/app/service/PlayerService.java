@@ -125,15 +125,7 @@ public class PlayerService {
 
         playerRepository.delete(player);
         return ModelMapper.fromPlayerToPlayerDto(player);
-
-        /*
-                playerRepository
-                .findAllByTeam_Id(team.getId())
-                .forEach(p -> p.setTeam(null));
-
-        teamRepository.delete(team);
-        return ModelMapper.fromTeamToTeamDto(team);
-         */
+        
     }
 
 }
